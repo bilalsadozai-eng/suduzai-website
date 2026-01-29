@@ -7,4 +7,4 @@ Technologies:
 - JavaScript
 
 Live Demo:
-https://yourusername.github.io/suduzai-website
+https://bilalsadozai-eng.github.io/suduzai-website
