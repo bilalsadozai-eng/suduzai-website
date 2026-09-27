@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suduzai Software Ltd</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0f1a;
+color:white;
+}
+
+/* NAVBAR */
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#0f172a;
+display:flex;
+justify-content:space-between;
+padding:15px 60px;
+z-index:1000;
+}
+
+nav h2{color:#38bdf8;}
+nav ul{
+list-style:none;
+display:flex;
+gap:25px;
+}
+nav a{
+color:white;
+text-decoration:none;
+}
+nav a:hover{color:#38bdf8}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+text-align:center;
+background:linear-gradient(to right,#020617,#0f172a);
+}
+
+.hero h1{
+font-size:60px;
+}
+.hero span{color:#38bdf8;}
+
+.hero button{
+padding:12px 30px;
+margin-top:20px;
+background:#38bdf8;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-size:16px;
+}
+
+/* SERVICES */
+section{
+padding:100px 60px;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:#020617;
+padding:30px;
+border-radius:20px;
+text-align:center;
+transition:0.4s;
+}
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #38bdf8;
+}
+
+/* PORTFOLIO */
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+.project{
+background:#020617;
+padding:20px;
+border-radius:15px;
+}
+
+/* CONTACT */
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+input,textarea{
+padding:12px;
+border-radius:10px;
+border:none;
+}
+form button{
+background:#38bdf8;
+padding:12px;
+border:none;
+border-radius:30px;
+}
+
+/* FOOTER */
+footer{
+background:#020617;
+text-align:center;
+padding:30px;
+}
+
+.social i{
+font-size:22px;
+margin:10px;
+color:#38bdf8;
+}
+
+/* CHAT BUTTON */
+.chat-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#38bdf8;
+color:black;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>Suduzai Software Ltd</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+<h1 data-aos="fade-up">We Build <span>Smart Software</span></h1>
+<p data-aos="fade-up">AI | Web | Mobile | Automation</p>
+<button>Get Started</button>
+</section>
+
+<section id="services">
+<h2 class="title">Our Services</h2>
+<div class="services">
+<div class="card" data-aos="zoom-in">
+<i class="fa fa-code"></i>
+<h3>Web Development</h3>
+<p>Modern Websites</p>
+</div>
+
+<div class="card" data-aos="zoom-in">
+<i class="fa fa-robot"></i>
+<h3>AI Solutions</h3>
+<p>Smart Automation</p>
+</div>
+
+<div class="card" data-aos="zoom-in">
+<i class="fa fa-mobile"></i>
+<h3>Mobile Apps</h3>
+<p>Android & iOS</p>
+</div>
+</div>
+</section>
+
+<section id="portfolio">
+<h2 class="title">Projects</h2>
+<div class="portfolio">
+<div class="project">E-Commerce System</div>
+<div class="project">AI Chatbot</div>
+<div class="project">School Management</div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="title">Contact Us</h2>
+<form>
+<input type="text" placeholder="Name">
+<input type="email" placeholder="Email">
+<textarea rows="5" placeholder="Message"></textarea>
+<button>Send</button>
+</form>
+</section>
+
+<footer>
+<p>© 2026 Suduzai Software Ltd</p>
+<div class="social">
+<i class="fab fa-facebook"></i>
+<i class="fab fa-linkedin"></i>
+<i class="fab fa-github"></i>
+</div>
+</footer>
+
+<div class="chat-btn">
+<i class="fa fa-comment"></i>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
+</body>
+</html>
